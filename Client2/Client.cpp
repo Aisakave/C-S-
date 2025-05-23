@@ -26,7 +26,7 @@ bool Client::init(const char* ip, unsigned short port)
 		std::cout << "WSAStartup 初始化失败，错误号：" << WSAGetLastError() << std::endl;
 		return false;
 	}
-	//socket（TCP 协议 + IPv4 地址族）!
+	//socket（TCP 协议 + IPv4 地址族）!!!!
 	clntSock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
 	if (clntSock == INVALID_SOCKET)
 	{
